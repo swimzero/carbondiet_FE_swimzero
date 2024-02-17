@@ -20,7 +20,7 @@ const Text = styled.span`
 export default function TextInput({ title, value, setValue, style, type }) {
   return (
     <InputDiv>
-      <Text>{title}</Text>
+      {!!title && <Text>{title}</Text>}
       <input
         type={!!type ? type : "text"}
         style={{
