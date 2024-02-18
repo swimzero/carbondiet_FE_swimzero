@@ -17,7 +17,14 @@ const Text = styled.span`
   text-align: center;
 `;
 
-export default function TextInput({ title, value, setValue, style, type }) {
+export default function TextInput({
+  title,
+  placeholder,
+  value,
+  setValue,
+  style,
+  type,
+}) {
   return (
     <InputDiv>
       {!!title && <Text>{title}</Text>}
@@ -32,6 +39,7 @@ export default function TextInput({ title, value, setValue, style, type }) {
           ...style,
         }}
         value={value}
+        placeholder={placeholder}
         onChange={(e) => setValue(e.target.value)}
       />
     </InputDiv>
