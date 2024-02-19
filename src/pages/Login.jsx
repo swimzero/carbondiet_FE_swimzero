@@ -1,8 +1,10 @@
 import { useState } from "react";
 import styled from "styled-components";
 import TextInput from "../components/TextInput";
+import axios from "axios";
 
 const Wrapper = styled.div`
+  box-sizing: border-box;
   width: 100%;
   height: 100vh;
   padding-top: 10vh;
@@ -56,8 +58,12 @@ export default function Login() {
   const [loginForm, setLoginForm] = useState({ id: "", pw: "" });
 
   const handleSubmit = () => {
-    console.log(loginForm.id);
-    console.log(loginForm.pw);
+    axios
+      .post("/login", { userid: loginForm.id, password: loginForm.pw })
+      .catch((res) => {
+        alert("로그인에 실패했습니다.");
+      })
+      .then((res) => {});
   };
 
   return (
