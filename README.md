@@ -18,3 +18,5 @@ This project was developed using React.js and submitted for the Google Solution 
 - CodeSandbox is a surprisingly good online editor.
 - I realized that setting challenging goals keeps me more motivated.
 - After working on this team project, I’ve become interested in becoming a full-stack developer. Having a broad understanding of all areas seems like it would provide a valuable perspective.
+
+You can see the Introducion about our project in -> https://www.youtube.com/watch?v=NyYjUUBF9Pg
